@@ -1,0 +1,180 @@
+*{
+	box-sizing: border-box;
+}
+
+body, html{
+	font-size: 16px;
+}
+
+body{
+
+	font-family: "Montserrat", sans-serif;
+	color:  rgba(0, 0, 0, .87);
+	line-height: 1.5;
+	margin: 0;
+}
+
+.topbar{
+	position: fixed;
+	top:  0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: #ddd;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, .5);
+
+	/*display: flex;
+	justify-content: space-between;*/
+	padding: 30px;
+	z-index: 100;
+
+}
+
+.topbar nav{
+	float:  left;
+}
+
+.topbar .social{
+	float:  right;
+}
+
+.topbar nav a{
+	text-decoration: none;
+	cursor: pointer!important;
+	color:  #9F9F9F;
+	padding: 0 20px;
+	font-weight: 500;
+}
+
+.topbar nav a:hover, .topbar nav a.active{
+	color: #000;
+}
+
+.topbar .social a{
+	padding: 0 12px;
+	opacity: .5;
+}
+
+.topbar .social a:hover{
+	opacity: 1;
+}
+
+.banniere {
+	/*margin-top: 3.125rem;*/
+	background:no-repeat center center / cover url('img/uk.jpg');
+	height: 427px;
+}
+
+.main{
+	float: left;
+	background-color: #fff;
+	width: calc(100% - 375px);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+	position: relative;
+	z-index: 2;
+}
+
+.sidebar{
+	float: right;
+	background-color: #fbfbfb;
+	width: 375px;
+	position: relative;
+	z-index: 1;
+	padding: 43px;
+}
+
+.sidebar-title{
+	font-size: 30px;
+	color: #000;
+	margin: 20px 0;
+}
+
+.sidebar-title:first-child{
+	margin-top: 0;
+}
+
+.sidebar a{
+	text-decoration: none;
+	color: #9F9F9F;
+}
+
+.sidebar a:hover{
+	text-decoration: underline;
+}
+
+.sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar li{
+	padding: 6px 0;
+}
+
+.sidebar li:first-child{
+	padding-top: 0;
+}
+
+.sidebar li:last-child{
+	padding-bottom: 0;
+}
+
+.sidebar hr{
+	border:none;
+	background:#c4c4c4;
+	height: 1px;
+	margin: 50px 0;
+}
+
+.article{
+	position: relative;
+	min-height: 203px;
+	margin: 50px 0;
+	padding-left: 333px;
+	max-width: 940px;
+}
+
+.article a{
+	color: inherit;
+	text-decoration: none;
+}
+
+.article a:hover{
+	text-decoration: underline;
+}
+
+
+.article-img{
+	/*float: left;*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	/*padding: 308px ;*/
+	width: 308px;
+	margin-right: 25px;
+}
+
+.article-img img{
+	width: 308px;
+	height: auto;
+}
+
+
+.article-date{
+	margin-bottom: 5px;
+	font-weight: 300;
+	color: rgba(0, 0, 0, .6);
+}
+
+
+.article-title{
+	/*font-size: 1.5rem;*/
+	margin:  0 0 15px 0;
+	font-family: "Cardo", serif;
+}
+
+footer{
+	clear: both;
+	background:  rgba(0, 0, 0, 0.7);
+}
